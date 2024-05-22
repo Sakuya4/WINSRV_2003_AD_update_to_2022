@@ -76,18 +76,23 @@ Windows 網域樹系目前最高提供到2016版本，2003 AD要升級為2022中
 開啟`CMD`依照以下步驟進行指令的輸入：
 
 1. `dfsrmig /SetGlobalState 1`，等待全域進入`準備完成`。
+
 ![image](https://github.com/Janalexei9/WINSRV_2003_AD_update_to_2022/assets/155059505/c92b0e77-29dd-4483-b49c-4a363f1a553b)
 
 2. `dfsrmig /getglobalstate`，顯示`DFSR全域狀態`進入`準備完成`
+
 ![image](https://github.com/Janalexei9/WINSRV_2003_AD_update_to_2022/assets/155059505/5a9c8c30-363e-4c47-8e89-be7c3c82b2ae)
 
-3. `dfsrmig /setglobalstate 2`，重新導向複寫。
+. `dfsrmig /setglobalstate 2`，重新導向複寫。
+   
 ![image](https://github.com/Janalexei9/WINSRV_2003_AD_update_to_2022/assets/155059505/75964214-edaf-4623-9bb6-0ceab732062d)
 
 4. `dfsrmig /setglobalstate 3`，狀態顯示`已排除`
+   
 ![image](https://github.com/Janalexei9/WINSRV_2003_AD_update_to_2022/assets/155059505/ad814ec9-1ed1-4f57-9610-66dde4812b54)
 
 5. `dfsrmig /getglobalstate` `dfsrmig /getmigrationstate`，檢查狀態。
+   
 ![image](https://github.com/Janalexei9/WINSRV_2003_AD_update_to_2022/assets/155059505/002f61ac-407f-429c-a87c-3fbacc10be8c)
 
 接下來將2022升級成DC後加入網域，並轉移五大角色，最後2012 DC退出網域，升級樹系。
