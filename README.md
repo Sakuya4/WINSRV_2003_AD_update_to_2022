@@ -15,7 +15,7 @@ Windows 網域樹系目前最高提供到2016版本，2003 AD要升級為2022中
 #### （二）、第一台AD環境建置
 
 以上說明3台虛擬機的配置後，接下來直接建立AD網域、樹系，域名取名為：`anontokyo.local`。
-需要將其他的`DC`加入到`anontokyo.local`，因為2003預設是2000等級，所以這裡先將樹系等級升級，並且確認樹系等級提升至2003。
+需要將其他的`DC`加入到`anontokyo.local`，因為2003預設是2000等級，所以這裡先將樹系等級升級，並且確認樹系等級提升至2003，記得要升兩個，網域名那邊點右鍵繼續升級。
 ![image](https://github.com/Janalexei9/WINSRV_2003_AD_update_to_2022/assets/155059505/6e710d79-bd8f-4409-b265-e7b890085ddb)
 
 ![image](https://github.com/Janalexei9/WINSRV_2003_AD_update_to_2022/assets/155059505/70e39122-48ab-4035-9865-ec21df844088)
